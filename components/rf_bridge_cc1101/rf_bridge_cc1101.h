@@ -60,7 +60,7 @@ class RFBridgeComponent : public Component,
   uint8_t clb2[2]{31, 38};
   uint8_t clb3[2]{65, 76};
   uint8_t clb4[2]{77, 79};
-  uint8_t PA_TABLE[8]{0x00, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+  uint8_t PA_TABLE[8]{0xC0, 0xC0, 0xC0, 0xC0, 0xC0, 0xC0, 0xC0, 0xC0};
 
   RemoteTransmitter *transmitter_{NULL};
   RemoteReceiver *receiver_{NULL};
