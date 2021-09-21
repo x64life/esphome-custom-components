@@ -412,8 +412,10 @@ void RFBridgeComponent::set_io_mode() {
   write_reg(CC1101_IOCFG2, 0x0D);
   write_reg(CC1101_IOCFG0, 0x0D);
   write_reg(CC1101_PKTCTRL0, 0x32);
+  //write_reg(CC1101_MDMCFG3, 0x93);
+  //write_reg(CC1101_MDMCFG4, 7 + m4RxBw);
   write_reg(CC1101_MDMCFG3, 0x83);
-  write_reg(CC1101_MDMCFG4, 6 + m4RxBw);
+  write_reg(CC1101_MDMCFG4, 0x86);
 
   set_modulation(modulation_);
 }
